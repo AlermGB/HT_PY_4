@@ -23,6 +23,7 @@ for i in range(1, len(main_chain)):
         row += 1
     elif row >= disappear_limit:
         result_sum += row
+        row = 1
     else:
         row = 1
 if row >= disappear_limit:
