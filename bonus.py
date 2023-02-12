@@ -25,7 +25,7 @@ while position < chain_length:
             row_counter += 1
             row = 1
     position += 1
-    if position == chain_length and row >= 3 or row_counter > 1 :
+    if (position == chain_length and row >= 3  and row_counter == 1) or row_counter > 1 :
         print('В линии не может быть больше одной непрерывной цепочки из 3-х и более элементов.')
         print('Ввод отменен. Начните с первого шарика')
         position = 0
